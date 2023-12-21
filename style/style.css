@@ -1,0 +1,85 @@
+/* main */
+main {
+    background-color: var(--main);
+    height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .container {
+    text-align: center;
+}
+main h2 {
+    margin: 0;
+    font-size: 4em;
+    color: var(--second);
+}
+main h3 {
+    margin: 50px 0 20px;
+    color: white;
+    font-size: 1.7em;
+}
+main .ed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main a {
+    display: block;
+    width: fit-content;
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 20px;
+}
+main .ed a:last-of-type {
+    margin-right: 30px;
+}
+main p {
+    color: var(--second);
+    font-size: 1.6em;
+}
+/* main */
+/* section */
+section {
+    padding: var(--space) 0;
+}
+section h2 {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5em;
+    color: var(--main);
+}
+section .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+}
+section .container .box {
+    background-color: var(--main);
+    color: white;
+    padding: 10px;
+}
+section .container .box h3 {
+    text-align: center;
+    font-size: 1.5em;
+}
+section .container .box li {
+    line-height: 1.7;
+}
+/* section */
+footer  {
+    direction: ltr;
+    padding: var(--space) 0;
+    background-color: var(--primary);
+}
+footer .container {
+    display: flex;
+    align-items: center;
+}
+footer .container h2 {
+    color: var(--second);
+}
+footer a {
+    color: var(--main);
+}

@@ -1,0 +1,58 @@
+header ul li:nth-of-type(4) {
+    display: flex;
+    height: 72px;
+    align-items: center;
+    color: var(--main);
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 0 20px;
+}
+@media (max-width: 767px) {
+    header ul li:nth-of-type(4) {
+        width: 100%;
+        justify-content: center;
+        border-top: 1px solid var(--primary);
+    }
+}
+header h1 a {
+    color: var(--main);
+}
+main {
+    padding: var(--space) 0;
+}
+main .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .container .box {
+    text-align: center;
+    background-color: var(--main);
+    padding: 20px;
+    min-width: 350px;
+}
+main .container .box h2 {
+    color: var(--second);
+    font-size: 1.5em;
+}
+main .container .box .links {
+    display: flex;
+    justify-content: center;
+}
+main .container .helo {
+    color: var(--main);
+    width: fit-content;
+    font-size: 2em;
+    margin: 0px auto 0;
+}
+main .container .helo:last-of-type {
+    margin-top: 100px;
+}
+main .container .box a {
+    background-color: var(--primary);
+    color: var(--second);
+    padding: 10px;
+}
+main .container .box a:last-of-type {
+    margin-right: 20px;
+}

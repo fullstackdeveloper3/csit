@@ -1,0 +1,50 @@
+header ul li:first-of-type {
+    display: flex;
+    height: 72px;
+    align-items: center;
+    color: var(--main);
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 0 20px;
+}
+@media (max-width: 767px) {
+    header ul li:first-of-type {
+        width: 100%;
+        justify-content: center;
+        border-top: 1px solid var(--primary);
+    }
+}
+header h1 a {
+    color: var(--main);
+}
+main h2 {
+    margin: 0 0 10px;
+    color: var(--second);
+}
+main {
+    padding: var(--space) 0 0;
+}
+main .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+}
+main .container .box {
+    text-align: center;
+    background-color: var(--main);
+    padding: 20px;
+
+}
+main .container .box .links {
+    display: flex;
+    justify-content: center;
+
+}
+main .container .box a {
+    background-color: var(--primary);
+    color: var(--second);
+    padding: 10px;
+}
+main .container .box a:last-of-type {
+    margin-right: 20px;
+}
