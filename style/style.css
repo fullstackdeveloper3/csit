@@ -75,7 +75,7 @@ footer  {
 }
 footer .container {
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 footer .container h2 {
     color: var(--second);
