@@ -17,7 +17,7 @@
         <header>
             <div class="container">
                 <h1><a href="../index.html">علوم الحاسوب</a></h1>
-                <div class="bars">
+                <div class="bars" id="clc" onclick="toggle()">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -48,7 +48,19 @@
                         <a href="../files/computer_s/01-Python_Data_Types.pptx" download="python" >تحميل</a>
                     </div>
                 </div>
+                <div class="box">
+                    <h2>بايثون - 2</h2>
+                    <div class="links">
+                        <a href="../files/computer_s/02-Python_if_For.pdf" download="python" >تحميل</a>
+                    </div>
+                </div>
             </div>
         </main>
+        <script>
+            function toggle() {
+                var myElement = document.getElementById('clc');
+                myElement.classList.toggle('bot');
+            }
+        </script>
     </body>
 </html>

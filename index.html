@@ -17,7 +17,7 @@
         <header>
             <div class="container">
                 <h1>علوم الحاسوب</h1>
-                <div class="bars">
+                <div class="bars" onclick="toggle()" id="clc" >
                     <span></span>
                     <span></span>
                     <span></span>
@@ -84,5 +84,11 @@
                 <h2>informations by <a href="https://t.me/ABDURHMANKAMAL" target="_blank">Abdurhman Kamal</a></h2>
             </div>
         </footer>
+        <script>
+            function toggle() {
+                var myElement = document.getElementById('clc');
+                myElement.classList.toggle('bot');
+            }
+        </script>
     </body>
 </html>

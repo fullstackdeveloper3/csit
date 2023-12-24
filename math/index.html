@@ -17,7 +17,7 @@
         <header>
             <div class="container">
                 <h1><a href="../index.html">علوم الحاسوب</a></h1>
-                <div class="bars">
+                <div class="bars" id="clc" onclick="toggle()" >
                     <span></span>
                     <span></span>
                     <span></span>
@@ -44,5 +44,11 @@
                 </div>
             </div>
         </main>
+        <script>
+            function toggle() {
+                var myElement = document.getElementById('clc');
+                myElement.classList.toggle('bot');
+            }
+        </script>
     </body>
 </html>

@@ -100,7 +100,7 @@ header nav {
         background-color: white;
         transition: 0.3s;
     }
-    header .bars:hover + nav {
+    header .bot + nav {
         top: 100%;
     }
 }
