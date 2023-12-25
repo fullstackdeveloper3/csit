@@ -18,16 +18,34 @@ header ul li:nth-of-type(6) {
 header h1 a {
     color: var(--main);
 }
+main h2 {
+    margin: 0 0 15px;
+    color: var(--second);
+}
 main {
-    padding: var(--space) 0;
+    padding: var(--space) 0 0;
 }
 main .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
 }
-main h2 {
-    color: var(--main);
-    font-size: 2.5em;
-    font-weight: 900;
+main .container .box {
+    text-align: center;
+    background-color: var(--main);
+    padding: 20px;
+
+}
+main .container .box .links {
+    display: flex;
+    justify-content: center;
+
+}
+main .container .box a {
+    background-color: var(--primary);
+    color: var(--second);
+    padding: 10px;
+}
+main .container .box a:last-of-type {
+    margin-right: 20px;
 }
