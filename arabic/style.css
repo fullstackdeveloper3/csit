@@ -26,14 +26,15 @@ main {
     padding: var(--space) 0 0;
 }
 main .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 main .container .box {
     text-align: center;
     background-color: var(--main);
     padding: 20px;
+    min-width: 350px;
 
 }
 main .container .box .links {
@@ -45,7 +46,4 @@ main .container .box a {
     background-color: var(--primary);
     color: var(--second);
     padding: 10px;
-}
-main .container .box a:last-of-type {
-    margin-right: 20px;
 }
